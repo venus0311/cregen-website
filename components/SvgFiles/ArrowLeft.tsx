@@ -1,19 +1,7 @@
 const ArrowLeft = () => {
     return (
-        <svg
-            width="19"
-            height="18"
-            viewBox="0 0 19 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path 
-                d="M8 3.75L2.75 9M2.75 9L8 14.25M2.75 9H16.25" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-            />
+        <svg width="43" height="16" viewBox="0 0 43 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42 9C42.5523 9 43 8.55228 43 8C43 7.44772 42.5523 7 42 7V9ZM0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM42 8V7L1 7V8V9L42 9V8Z" fill="white" />
         </svg>
     );
 };

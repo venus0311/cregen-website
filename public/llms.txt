@@ -1,0 +1,9 @@
+# Example llms.txt
+User-agent: openai
+Disallow: /private-data/
+
+User-agent: anthropic
+Allow: /
+
+User-agent: *
+Disallow: /not-for-llms/

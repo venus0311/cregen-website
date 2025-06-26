@@ -5,18 +5,14 @@ import Footer from '@/components/Footer';
 import Solutions from '@/components/Solutions';
 import Projects from '@/components/Projects';
 import SplashCursor from '@/components/SplashCursor';
-
+import Layout from '@/components/Layout';
 export default function Home() {
   return (
-    <>
-      <main className="overflow-hidden w-full bg-black font-Neue">
-        <SplashCursor />
-        <Header />
-        <Description />
-        <Solutions />
-        <Projects />
-        <Footer />
-      </main>
-    </>
+    <div className='overflow-x-hidden'>
+      <Layout>
+        {/* <SplashCursor /> */}
+        <p>Hello</p>
+      </Layout>
+    </div>
   );
 }
