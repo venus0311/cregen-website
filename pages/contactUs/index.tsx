@@ -1,8 +1,8 @@
 import Layout from '@/components/Layout';
-export default function Privacy() {
+export default function ContactUs() {
     return (
         <Layout>
-            <h1>Privacy</h1>
+            <h1>Contact Us</h1>
         </Layout>
     )
 }

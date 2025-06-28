@@ -1,8 +1,8 @@
 import Layout from '@/components/Layout';
-export default function Privacy() {
+export default function careers() {
     return (
         <Layout>
-            <h1>Privacy</h1>
+            <h1>Careers</h1>
         </Layout>
     )
 }
