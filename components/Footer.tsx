@@ -5,26 +5,27 @@ import Linkdin from "./SvgFiles/Linkdin";
 import Logo from "./SvgFiles/Logo";
 import AnimatedButton from "./Button";
 import React from "react";
+import Link from "next/link";
 
 const footerLinks = [
   {
     items: [
-      "Home",
-      "About Us",
-      "Solutions"
+      { name: "Home", url: "/" },
+      { name: "About Us", url: "/aboutUs" },
+      { name: "Solutions", url: "/solutions" }
     ],
   },
   {
     items: [
-      "Showcases",
-      "Carrers",
-      "Contact US",
+      { name: "Showcases", url: "/showcases" },
+      { name: "Carrers", url: "/careers" },
+      { name: "Contact US", url: "/contactUs" },
     ],
   },
   {
     items: [
-      "Privacy Policy",
-      "Terms & Conditions",
+      { name: "Privacy Policy", url: "/privacy" },
+      { name: "Terms & Conditions", url: "/termsConditions" },
     ],
   },
 ];
@@ -39,11 +40,13 @@ const Footer = () => {
             <div className="space-y-4" key={colIdx}>
               <ul className="space-y-2 text-base text-white">
                 {column.items.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="hover:text-yellow-400 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 "
-                  >
-                    {item}
+                  <li key={idx}>
+                    <Link
+                      href={item.url}
+                      className="hover:text-yellow-400 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105 block"
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
