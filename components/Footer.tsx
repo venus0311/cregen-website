@@ -2,6 +2,7 @@ import Bot from "./SvgFiles/bot";
 import Facebook from "./SvgFiles/Facebook";
 import Instagram from "./SvgFiles/Instagram";
 import Linkdin from "./SvgFiles/Linkdin";
+import Twitter from "./SvgFiles/Twitter";
 import Logo from "./SvgFiles/Logo";
 import AnimatedButton from "./Button";
 import React from "react";
@@ -59,9 +60,10 @@ const Footer = () => {
             </AnimatedButton>
             <div className="flex flex-col lg:flex-row gap-4">
               <div className="flex gap-4">
-                <Instagram />
-                <Facebook />
-                <Linkdin />
+                <Link href="https://www.instagram.com/cregen_official/?igsh=MXl6bWZkZnU0MTg2&utm_source=qr"><Instagram /></Link>
+
+                <Link href="https://x.com/cregen_official?s=21"><Facebook /></Link>
+                <Link href="https://www.linkedin.com/company/cregen/"><Linkdin /></Link>
               </div>
             </div>
           </div>
