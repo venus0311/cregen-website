@@ -19,10 +19,10 @@ const Header = ({ title }: { title: string }) => {
       <div className="absolute top-0 flex flex-col w-full h-fit items-center justify-between z-10 px-10 lg:pl-[165px]">
         <div className="w-full pt-12  mt-2.5 flex justify-between items-center">
           <div className="flex items-center justify-between w-full">
-            {title && <div className="flex items-center">
+            {title && <Link href='/' className="flex items-center  hover:scale-105 duration-300 hover:text-[#B8E43F]">
               <ArrowLeft />
-              <p className="font-Neue text-base text-white">{title}</p>
-            </div>}
+              <p className="font-Neue text-base text-white ml-4 hover:text-[#B8E43F]">{title}</p>
+            </Link>}
           </div>
           <button
             type="button"

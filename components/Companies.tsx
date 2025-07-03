@@ -57,7 +57,7 @@ const Footer = () => {
           />
         ))}
         <AnimatedButton className="flex items-center border-solid border-[1.5px] border-transparent animated-gradient-border cursor-pointer rounded-full p-4 max-w-[178px] text-gray-200 justify-center gap-3 mt-10">
-          <Link href="/contactUs" className="text-base text-center ">Get in Touch</Link>
+          <Link href="/contactUs" className="text-base text-center hover:text-[#B8E43F] hover:scale-105 duration-300">Get in Touch</Link>
           <ArrowRight1 />
         </AnimatedButton>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import TheStory from "../SvgFiles/home/TheStory";
 import Link from "next/link";
 import Image from "next/image";
-
+import GetInTouch from "../GetInTouch";
 export default function Cregen() {
   return (
     <div className="relative pt-32 pb-[270px]">
@@ -25,18 +25,7 @@ export default function Cregen() {
             <TheStory />
           </div>
         </div>
-        <Link href="/contactUs" className="flex w-full items-center justify-end text-white font-Neue cursor-pointer gap-2">
-          <p className=" text-sm font-light">Get in Touch</p>
-          <div className="w-7 h-7">
-            <Image
-              src={'/getInTouch.gif'}
-              alt="slider"
-              width={28}
-              height={28}
-              className=" "
-            />
-          </div>
-        </Link>
+        <GetInTouch />
       </div>
     </div>
   );
