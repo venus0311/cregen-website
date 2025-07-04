@@ -3,7 +3,7 @@ import TheStory from "../SvgFiles/home/TheStory";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Footer() {
+export default function  Footer() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center px-4 py-40">
       {/* Polygon/Crystal Video */}
