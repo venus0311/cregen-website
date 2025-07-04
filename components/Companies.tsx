@@ -41,7 +41,7 @@ const Footer = () => {
     };
     animateSentences();
     return () => { isMounted = false; };
-  }, [mounted]);
+  }, []);
 
   return (
     <div data-aos="fade-up" className={`relative w-full px-5 lg:px-[77px] h-full flex flex-col gap-32 lg:gap-64 mb-[122px] `}>
