@@ -1,0 +1,38 @@
+const Blockchain = () => {
+  return (
+    <svg width="165" height="139" viewBox="0 0 165 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M76.8271 62.5474L23.168 92.8482C20.4571 94.379 20.4571 98.2835 23.168 99.8143L76.8271 130.115C78.0621 130.813 79.5741 130.804 80.801 130.092L133.035 99.7913C135.693 98.2498 135.693 94.4127 133.035 92.8713L80.801 62.5704C79.5741 61.8587 78.0621 61.85 76.8271 62.5474Z" fill="#D9D9D9" />
+      <g filter="url(#filter0_d_90_452)">
+        <path d="M76.8271 41.969L23.168 72.2699C20.4571 73.8007 20.4571 77.7051 23.168 79.2359L76.8271 109.537C78.0621 110.234 79.5741 110.225 80.801 109.514L133.035 79.2129C135.693 77.6715 135.693 73.8343 133.035 72.2929L80.801 41.9921C79.5741 41.2804 78.0621 41.2716 76.8271 41.969Z" fill="white" />
+      </g>
+      <g filter="url(#filter1_d_90_452)">
+        <path d="M76.8271 22.1258L23.168 52.4266C20.4571 53.9574 20.4571 57.8619 23.168 59.3927L76.8271 89.6935C78.0621 90.391 79.5741 90.3822 80.801 89.6705L133.035 59.3696C135.693 57.8282 135.693 53.9911 133.035 52.4497L80.801 22.1488C79.5741 21.4371 78.0621 21.4283 76.8271 22.1258Z" fill="#D4F39A" />
+      </g>
+      <defs>
+        <filter id="filter0_d_90_452" x="1.13489" y="21.4521" width="161.893" height="116.602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="4" dy="4" />
+          <feGaussianBlur stdDeviation="12" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_90_452" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_90_452" result="shape" />
+        </filter>
+        <filter id="filter1_d_90_452" x="0.134888" y="0.608887" width="163.893" height="118.602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="4" dy="4" />
+          <feGaussianBlur stdDeviation="12.5" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0.831373 0 0 0 0 0.952941 0 0 0 0 0.603922 0 0 0 0.8 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_90_452" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_90_452" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+
+  );
+};
+
+export default Blockchain;

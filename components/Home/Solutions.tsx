@@ -136,7 +136,7 @@ const Solutions = () => {
         </motion.div>
 
         {isSmallScreen ? (
-          <div className="w-full pb-20 px-5 lg:px-[77px]">
+          <div className="w-full pb-20 px-5 lg:px-[77px] cursor-pointer">
             <Slider {...sliderSettings}>
               {solutionsData.map((item) => (
                 <div key={item.id} className="px-2">

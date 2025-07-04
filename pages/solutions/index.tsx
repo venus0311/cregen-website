@@ -1,8 +1,15 @@
 import Layout from '@/components/Layout';
+import OurSolutions from '@/components/Solutions/OurSolutions';
+import Cards from '@/components/Solutions/Cards';
+import Companies from '@/components/Companies';
 export default function Solutions() {
     return (
-        <Layout>
-            <h1>Solutions</h1>
-        </Layout>
+        <div className='overflow-x-hidden bg-black font-Neue'>
+            <Layout title="Solutions">
+                <OurSolutions />
+                <Cards />
+                <Companies />
+            </Layout>
+        </div>
     )
 }

@@ -1,0 +1,34 @@
+const AiDevelop = () => {
+  return (
+    <svg width="174" height="149" viewBox="0 0 174 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle opacity="0.4" cx="37.5" cy="111.007" r="36.7295" stroke="white" stroke-width="1.5411" />
+      <circle opacity="0.6" cx="61.1304" cy="92" r="36.7295" stroke="white" stroke-width="1.5411" />
+      <circle opacity="0.8" cx="87.3289" cy="73.5068" r="36.7295" stroke="white" stroke-width="1.5411" />
+      <g filter="url(#filter0_d_90_348)">
+        <circle cx="112.5" cy="54.5" r="37.5" fill="url(#paint0_linear_90_348)" shape-rendering="crispEdges" />
+        <circle cx="112.5" cy="54.5" r="36.7295" stroke="#D4F39A" stroke-width="1.5411" shape-rendering="crispEdges" />
+      </g>
+      <defs>
+        <filter id="filter0_d_90_348" x="57.9978" y="-0.0021534" width="115.805" height="115.805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dx="3.40043" dy="3.40043" />
+          <feGaussianBlur stdDeviation="10.2013" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0.831373 0 0 0 0 0.952941 0 0 0 0 0.603922 0 0 0 0.8 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_90_348" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_90_348" result="shape" />
+        </filter>
+        <linearGradient id="paint0_linear_90_348" x1="112.5" y1="17" x2="112.5" y2="65.8116" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D7F0A7" />
+          <stop offset="1" stop-color="#D7F0A7" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+
+
+  );
+};
+
+export default AiDevelop;

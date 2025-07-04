@@ -8,7 +8,7 @@ import Footer from '@/components/Home/Footer';
 export default function Home() {
   return (
     <div className='overflow-x-hidden bg-black font-Neue'>
-      <Layout>
+      <Layout title="">
         {/* <SplashCursor /> */}
         <Cregen />
         <DiamondCard />
