@@ -1,8 +1,13 @@
 import Layout from '@/components/Layout';
-export default function Privacy() {
+import Privacy from '@/components/Privacy/Privacy';
+import Built from '@/components/Careers/Built';
+export default function PrivacyPage() {
     return (
-        <Layout>
-            <h1>Privacy</h1>
-        </Layout>
+        <div className='overflow-x-hidden bg-black font-Neue'>
+            <Layout title="Privacy">
+                <Privacy />
+                <Built />
+            </Layout>
+        </div>
     )
 }

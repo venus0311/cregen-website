@@ -1,8 +1,13 @@
 import Layout from '@/components/Layout';
+import Terms from '@/components/Terms/Terms';
+import Built from '@/components/Careers/Built';
 export default function TermsConditions() {
     return (
-        <Layout>
-            <h1>Terms Conditions</h1>
-        </Layout>
+        <div className='overflow-x-hidden bg-black font-Neue'>
+            <Layout title="Terms & Conditions">
+                <Terms />
+                <Built />
+            </Layout>
+        </div>
     )
 }
