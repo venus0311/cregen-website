@@ -75,14 +75,14 @@ export const RotatingText = ({
     >
       <motion.div className={styles.front} variants={container}>
         {Array.from(text).map((char, i) => (
-          <motion.span custom={i} key={`${char}${i}`} variants={wordCopy}>
+          <motion.span custom={i} key={`${char}${i}`}>
             {char}
           </motion.span>
         ))}
       </motion.div>
       <motion.div className={styles.back} variants={container}>
         {Array.from(text).map((char, i) => (
-          <motion.span custom={i} key={`${char}${i}copy`} variants={word}>
+          <motion.span custom={i} key={`${char}${i}copy`}>
             {char}
           </motion.span>
         ))}
