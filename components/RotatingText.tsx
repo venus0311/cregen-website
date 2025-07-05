@@ -31,28 +31,37 @@ export const RotatingText = ({
   // Always provide a valid variant object for Framer Motion
   const wordCopy = {
     rotate: prefersReducedMotion
-      ? { y: '0%', rotateX: 0, scaleX: 1, scaleY: 1, transition: { duration: 0 } }
+      ? {
+          y: ['0%', '0%'],
+          rotateX: [0, 0],
+          scaleX: [1, 1],
+          scaleY: [1, 1],
+          transition: { duration: 0, ease: "easeInOut" }
+        }
       : {
           y: ['0%', '30%'],
           rotateX: [0, 90],
           scaleX: [1, 0.4],
           scaleY: [1, 0.4],
-          transition: {
-            duration: timing,
-            ease: "easeInOut"
-          }
+          transition: { duration: timing, ease: "easeInOut" }
         }
   };
 
   const word = {
     rotate: prefersReducedMotion
-      ? { y: '0%', rotateX: 0, scaleX: 1, scaleY: 1, transition: { duration: 0 } }
+      ? {
+          y: ['0%', '0%'],
+          rotateX: [0, 0],
+          scaleX: [1, 1],
+          scaleY: [1, 1],
+          transition: { duration: 0, ease: "easeInOut" }
+        }
       : {
           y: ['-30%', '0%'],
           rotateX: [-90, 0],
           scaleX: [0.4, 1],
           scaleY: [0.4, 1],
-          transition: { duration: timing }
+          transition: { duration: timing, ease: "easeInOut" }
         }
   };
 
