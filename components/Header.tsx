@@ -49,7 +49,7 @@ const Header = ({ title }: { title: string }) => {
               {navLinks.map((link) => (
                 <li
                   key={link.label}
-                  className="text-white text-6xl font-normal hover:text-[#B8E43F] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
+                  className="text-white text-4xl sm:text-6xl font-normal hover:text-[#B8E43F] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
                 >
                   <Link href={link.href}>{link.label}</Link>
                 </li>

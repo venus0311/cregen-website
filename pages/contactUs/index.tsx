@@ -1,15 +1,15 @@
 import Layout from '@/components/Layout';
-import OurStory from '@/components/AboutUs/OurStory';
-import CregenHistory from '@/components/AboutUs/CregenHistory';
-import WhatDriveUs from '@/components/AboutUs/WhatDriveUs';
-import TheVision from '@/components/AboutUs/TheVision';
+import Contact from '@/components/ContactUs/Contact';
+import ContactFormLayout from '@/components/ContactUs/ContactFormLayout';
+import OurVision from '@/components/ContactUs/OurVision';
 export default function ContactUs() {
     return (
-        <Layout title="Contact Us">
-            <OurStory />
-            <CregenHistory />
-            <WhatDriveUs />
-            <TheVision />
-        </Layout>
-    )
+        <div className='overflow-x-hidden bg-black font-Neue'>
+            <Layout title="Contact Us">
+                <Contact />
+                <ContactFormLayout />
+                <OurVision />
+            </Layout>
+        </div>
+    )           
 }
