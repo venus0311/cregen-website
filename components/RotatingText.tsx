@@ -28,9 +28,10 @@ export const RotatingText = ({
     rotate: { transition: { staggerChildren: stagger } }
   }
 
+  // Always provide a valid variant object for Framer Motion
   const wordCopy = {
     rotate: prefersReducedMotion
-      ? {}
+      ? { y: '0%', rotateX: 0, scaleX: 1, scaleY: 1, transition: { duration: 0 } }
       : {
           y: ['0%', '30%'],
           rotateX: [0, 90],
@@ -45,7 +46,7 @@ export const RotatingText = ({
 
   const word = {
     rotate: prefersReducedMotion
-      ? {}
+      ? { y: '0%', rotateX: 0, scaleX: 1, scaleY: 1, transition: { duration: 0 } }
       : {
           y: ['-30%', '0%'],
           rotateX: [-90, 0],
