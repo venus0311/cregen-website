@@ -5,7 +5,7 @@ import styles from '../styles/rotating.module.css'
 interface Props {
   text: string
   stagger?: number // Time between each letter
-  timing?: number // Duration of each letter
+  timing?: number | number[] // Duration of each letter
   className?: string // Pass custom class
   style?: React.CSSProperties // Pass custom style
   animate: any
@@ -28,42 +28,38 @@ export const RotatingText = ({
     rotate: { transition: { staggerChildren: stagger } }
   }
 
-  // Always provide a valid variant object for Framer Motion
-  const wordCopy = {
-    rotate: prefersReducedMotion
-      ? {
-          y: ['0%', '0%'],
-          rotateX: [0, 0],
-          scaleX: [1, 1],
-          scaleY: [1, 1],
-          transition: { duration: 0, ease: "easeInOut" }
-        }
-      : {
-          y: ['0%', '30%'],
-          rotateX: [0, 90],
-          scaleX: [1, 0.4],
-          scaleY: [1, 0.4],
-          transition: { duration: timing, ease: "easeInOut" }
-        }
-  };
+  const duration = React.useMemo(() => {
+    if (Array.isArray(timing)) return timing
+    else return Array.from({ length: text.length }, () => timing)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timing])
 
-  const word = {
-    rotate: prefersReducedMotion
-      ? {
-          y: ['0%', '0%'],
-          rotateX: [0, 0],
-          scaleX: [1, 1],
-          scaleY: [1, 1],
-          transition: { duration: 0, ease: "easeInOut" }
+  const wordCopy = prefersReducedMotion
+    ? undefined
+    : {
+      rotate: (i: number) => ({
+        y: ['0%', '30%'],
+        rotateX: [0, 90],
+        scaleX: [1, 0.4],
+        scaleY: [1, 0.4],
+        transition: {
+          duration: duration[i],
+          ease: "easeInOut"
         }
-      : {
-          y: ['-30%', '0%'],
-          rotateX: [-90, 0],
-          scaleX: [0.4, 1],
-          scaleY: [0.4, 1],
-          transition: { duration: timing, ease: "easeInOut" }
-        }
-  };
+      })
+    }
+
+  const word = prefersReducedMotion
+    ? undefined
+    : {
+      rotate: (i: number) => ({
+        y: ['-30%', '0%'],
+        rotateX: [-90, 0],
+        scaleX: [0.4, 1],
+        scaleY: [0.4, 1],
+        transition: { duration: duration[i] }
+      })
+    }
 
   // Trigger animation on mount
   React.useEffect(() => {
@@ -79,14 +75,14 @@ export const RotatingText = ({
     >
       <motion.div className={styles.front} variants={container}>
         {Array.from(text).map((char, i) => (
-          <motion.span key={`${char}${i}`} variants={word}>
+          <motion.span custom={i} key={`${char}${i}`} variants={wordCopy}>
             {char}
           </motion.span>
         ))}
       </motion.div>
       <motion.div className={styles.back} variants={container}>
         {Array.from(text).map((char, i) => (
-          <motion.span key={`${char}${i}copy`} variants={word}>
+          <motion.span custom={i} key={`${char}${i}copy`} variants={word}>
             {char}
           </motion.span>
         ))}
