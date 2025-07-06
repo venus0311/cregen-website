@@ -7,7 +7,7 @@ import ArrowRight1 from "./SvgFiles/ArrowRight1"
 import ArrowLeft from "./SvgFiles/ArrowLeft"
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-
+import Link from "next/link"
 interface SliderData {
     id: number
     image: string
@@ -112,7 +112,7 @@ const HomeHeaderSlick: React.FC = () => {
                     </div>
                 </div>
                 <AnimatedButton className="flex items-center border-solid border-[1.5px] border-transparent animated-gradient-border cursor-pointer rounded-full p-4 text-gray-200 justify-center gap-3">
-                    <p className="text-[14px] text-center">Explore All Showcases</p>
+                    <Link href='/showcases' className="text-[14px] text-center">Explore All Showcases</Link>
                     <ArrowRight1 />
                 </AnimatedButton>
             </div>

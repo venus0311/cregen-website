@@ -7,7 +7,7 @@ export default function ReachOut() {
     <div className="w-full md:w-1/2 flex flex-col justify-start md:pr-16 mb-12 md:mb-0">
       <h1 className={`text-4xl md:text-5xl font-bold mb-8 ${accent}`}>REACH OUT<br />DIRECTLY</h1>
       <div className="mb-12">
-        <p className="mb-2">Email: <a href="mailto:hello@cregen.io" className={accent}>hello@cregen.io</a></p>
+        <p className="mb-2">Email: <a href="mailto:hello@cregen.tech" className={accent}>hello@cregen.tech</a></p>
         <p className="mb-2">Phone: <a href="tel:+971501234567" className={accent}>+971 50 123 4567</a></p>
         <p>Office: Dubai, UAE (Working globally)</p>
       </div>

@@ -8,7 +8,7 @@ export default function ContactFormLayout() {
       <div className="flex flex-col justify-center items-start w-[350px] sm:w-[500px]">
         <h1 className={`text-4xl md:text-5xl font-bold mb-8 text-[#B8E43F]`}>REACH OUT<br />DIRECTLY</h1>
         <div className="mb-12 text-base">
-          <p className="mb-2">Email: <a href="mailto:hello@cregen.io" className={``}>hello@cregen.io</a></p>
+          <p className="mb-2">Email: <a href="mailto:hello@cregen.tech" className={``}>hello@cregen.tech</a></p>
           <p className="mb-2">Phone: <a href="tel:+971501234567" className={``}>+971 50 123 4567</a></p>
           <p>Office: Dubai, UAE (Working globally)</p>
         </div>

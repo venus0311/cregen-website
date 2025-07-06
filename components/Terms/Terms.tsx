@@ -33,7 +33,7 @@ export default function Terms() {
                             <p>We may update these Terms or our Privacy Policy from time to time. Continued use of our site signifies acceptance of any revisions.</p>
                         </li>
                     </ol>
-                    <p className="mt-6">For questions about these terms, contact us at: <span className="text-[#B8E43F]">legal@cregen.io</span></p>
+                    <p className="mt-6">For questions about these terms, contact us at: <span className="text-[#B8E43F]">legal@cregen.tech</span></p>
                 </div>
             </div>
             <div className="circle"></div>

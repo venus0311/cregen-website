@@ -39,7 +39,7 @@ export default function Privacy() {
                         </li>
                         <li>
                             <span className="font-semibold">Your Rights</span>
-                            <p>You may request access, correction, or deletion of your data at any time by contacting us at: <span className="text-[#B8E43F]">privacy@cregen.io</span></p>
+                            <p>You may request access, correction, or deletion of your data at any time by contacting us at: <span className="text-[#B8E43F]">privacy@cregen.tech</span></p>
                         </li>
                     </ol>
                 </div>
